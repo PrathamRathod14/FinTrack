@@ -22,8 +22,9 @@ api.interceptors.response.use(
   (error) => {
     if (error.response?.status === 401) {
       localStorage.removeItem('fintrack_token');
-      if (window.location.pathname !== '/login' && window.location.pathname !== '/register' && window.location.pathname !== '/') {
-        window.location.href = '/login';
+      const path = window.location.pathname;
+      if (!path.endsWith('/login') && !path.endsWith('/register') && path !== '/FinTrack/' && path !== '/FinTrack') {
+        window.location.href = '/FinTrack/login';
       }
     }
     const message =
