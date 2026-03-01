@@ -7,8 +7,20 @@ const errorHandler = require('./middleware/errorHandler');
 const app = express();
 
 // Middleware
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://prathamrathod14.github.io'
+];
+if (process.env.CLIENT_URL) allowedOrigins.push(process.env.CLIENT_URL);
+
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.some(o => origin.startsWith(o))) {
+      callback(null, true);
+    } else {
+      callback(null, true); // allow all in case of new domains
+    }
+  },
   credentials: true
 }));
 app.use(express.json());
