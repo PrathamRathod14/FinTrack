@@ -4,6 +4,8 @@ A professional, full-stack expense tracking web application built with React, No
 
 ![Tech Stack](https://img.shields.io/badge/React-18-blue) ![Node.js](https://img.shields.io/badge/Node.js-18+-green) ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-3-38bdf8)
 
+Live: https://prathamrathod14.github.io/FinTrack/
+
 ---
 
 ## Features
