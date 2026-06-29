@@ -228,6 +228,11 @@ The app will open at `http://localhost:5173`.
 
 ---
 
+<img width="1511" height="736" alt="WhatsApp Image 2026-06-29 at 1 46 06 PM" src="https://github.com/user-attachments/assets/2b0fb1c9-e975-411c-8838-faafebc0cad9" />
+
+<img width="1414" height="729" alt="WhatsApp Image 2026-06-29 at 1 46 47 PM" src="https://github.com/user-attachments/assets/a54b18d2-6242-40fa-82a5-6bfc0c366cc1" />
+
+
 ## Tech Stack
 
 | Layer | Technology |
